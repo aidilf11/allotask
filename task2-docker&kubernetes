@@ -1,0 +1,22 @@
+import pandas as pd 
+
+print("example using pandas and numpy")
+
+data = {'name': ['Aidil', 'Adit', 'Amanda', 'Monica'],
+        'age': ['24','19','23','26'],
+        'addresses':['Menteng','Palembang','Poris','Poris']}
+
+df = pd.DataFrame(data)
+print(df)
+
+names_column = df['name']
+print("\nname_column:")
+print(names_column)
+
+df['salary'] = [5000000, 6000000, 7000000, 9000000]
+
+print("\nupdated dataframe with salary column:")
+print(df)
+
+mean_age = df['age'].mean()
+print("\nmean age:", mean_age)
