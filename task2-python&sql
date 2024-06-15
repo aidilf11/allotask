@@ -1,0 +1,18 @@
+import numpy as np 
+import pandas as pd 
+
+df.to_csv('export.csv') 
+
+df = pd.DataFrame({'order_id':[1], 
+
+                  'customer_id':[11], 
+
+                  'order_date':[15062024],   
+
+                  'order_amount':[19]}) 
+
+
+ df2 = pd.read_csv('export.csv') 
+
+ 
+df2 
