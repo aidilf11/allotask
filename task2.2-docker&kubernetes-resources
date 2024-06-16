@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: allotaskpod-resources
+spec:
+  containers:
+  - name: allotaskpod-resources-test
+    image: nginx
+    ports:
+        - containerPort: 80
+    resources:
+      requests:
+        memory: "128Mi"
+        cpu: "100m"
+      limits:
+        memory: "256Mi"
+        cpu: "200m"
